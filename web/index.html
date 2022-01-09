@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Panel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/milligram/1.4.1/milligram.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <section class="container">
+                Status Panel <span class="subtitle">for nanoPort</span>
+            </section>
+        </nav>
+
+        <div class="container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Available</th>
+                        <th>Latency</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+            <blockquote>
+                <p><em>These data will be updated every 5 minutes</em></p>
+            </blockquote>
+            <blockquote>
+                <p><em>The network latency here refers to the latency from the latency test server to the node, and is used for reference only</em></p>
+            </blockquote>
+            <p>A public service from the Zeronight</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
